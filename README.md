@@ -1,6 +1,6 @@
 ﻿# M2:[高性价比控制节点](https://github.com/OS-Q/M2) 
 
-高性价比控制节点，开发便利，属Q1系统子集
+高性价比控制节点，属Q1系统子集
 
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
 
@@ -8,7 +8,7 @@
 
 #### 更低成本：[M1节点](https://github.com/OS-Q/M1)
 
-#### 关于控制节点：[Q1系统](https://github.com/OS-Q/Q1) 可访问 www.OS-Q.com
+#### 控制节点：[Q1系统](https://github.com/OS-Q/Q1)可访问 www.OS-Q.com
 
 ---
 
@@ -18,15 +18,21 @@
 
 ---
 
-## 组成
+## 仓库构成
+
+公共控制文件
+
+---
+
+## 项目组成
 
 #### [W5板级设备](https://github.com/OS-Q/W5)
 
-
+基于freeRTOS系统
 
 #### [W6板级设备](https://github.com/OS-Q/W6)
 
-
+基于ucos系统
 
 #### [W7板级设备](https://github.com/OS-Q/W7)
 
