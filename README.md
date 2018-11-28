@@ -1,52 +1,62 @@
-﻿# [M2:高性价比](https://github.com/OS-Q/M2) 
-
-高性价比控制节点，快速开发
+﻿# M2:[协同控制](https://github.com/OS-Q/M2) 
 
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
 
-### 更高性能：[M3](https://github.com/OS-Q/M3)
+和通信节点协同完成控制
 
-### 更低成本：[M1](https://github.com/OS-Q/M1)
+#### 归属系统体系：[Q1](https://github.com/OS-Q/Q1)
 
-#### 控制节点：[Q1](https://github.com/OS-Q/Q1)
+#### 关于系统架构：[OS-Q](https://github.com/OS-Q/OS-Q)
 
-#### 系统宏观：[OS-Q](https://github.com/OS-Q/OS-Q)
+## [节点描述](https://github.com/OS-Q/M2/wiki) 
 
----
+协同控制节点，通过搭配对应的通信节点组成完整的控制设备，向上反馈信息并接收后续指令
 
-## [描述](https://github.com/OS-Q/M2/wiki) 
+### [共用资源](https://github.com/OS-Q/M2/wiki/src) 
 
-高性价比主流SOC，软硬件性价比高
+#### 通信协议
 
-#### common
+- TLV 数据组帧协议
 
-
-
----
-
-## 硬件单元
-
-基于多功能无线SOC和RTOS，完成丰富的通信控制任务
-
-#### [W5芯级设备](https://github.com/OS-Q/W5)
-
-基于NRF51 + freeRTOS
-
-#### [W6芯级设备](https://github.com/OS-Q/W6)
-
-基于NRF52 + freeRTOS
-
-#### [W7芯级设备](https://github.com/OS-Q/W7)
-
-基于ESP8266 + freeRTOS
-
-#### [W8芯级设备](https://github.com/OS-Q/W8)
-
-基于ESP32 + freeRTOS
+- CRC 数据校验协议
 
 ---
 
-###  锻造最美之器
+边缘设备命名规则：体系 Q[1,4] > 节点 M[1,12] > 平台 W[1,52] > 设备 D[1,365]。
 
-###  www.OS-Q.com   |   qitas@qitas.cn
+## [包含平台](https://github.com/OS-Q/M2/wiki/index) 
+
+#### W5:[低成本平台](https://github.com/OS-Q/W5)
+
+基于低成本方案提供丰富的协同控制方案
+
+#### W6:[性价比平台](https://github.com/OS-Q/W6)
+
+基于广泛应用的平台提供快速实现的方案
+
+#### W7:[高性能平台](https://github.com/OS-Q/W7)
+
+基于各种高性能处理平台完成对应控制
+
+#### W8:[高密度平台](https://github.com/OS-Q/W8)
+
+更紧凑的设计和更小的器件实现高密度
+
+#### W9:[专用化平台](https://github.com/OS-Q/W9)
+
+基于各种专用设备完成专用领域的控制
+
+
+## [同级节点](https://github.com/OS-Q/M2/wiki/index)
+
+#### M1:[离线控制](https://github.com/OS-Q/M1)
+
+#### M3:[无线控制](https://github.com/OS-Q/M3)
+
+
+---
+
+###  [Q redefined the scope of operation system](http://www.OS-Q.com)
+###  qitas@qitas.cn
+###  2018-11-28
 
