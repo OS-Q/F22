@@ -1,4 +1,4 @@
-﻿# M2：[输出控制](https://github.com/OS-Q/M2) 
+﻿# M2：[数据输出](https://github.com/OS-Q/M2) 
 
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
 
@@ -8,13 +8,17 @@
 
 ## [节点描述](https://github.com/OS-Q/M2/wiki) 
 
-M2输出控制节点，用于对外输出控制，实现系统的数据消费过程
+M2数据输出节点，用于对外输出控制，实现系统的数据消费过程
 
 ### [共用资源](https://github.com/OS-Q/M2/wiki) 
 
-#### [协同通信](M4/)
+#### [数据处理](IO/)
 
-M3节点和M4节点协同规范
+包括串口数据的收发格式
+
+####[归一化层](OS-Q/)
+
+平台编程的归一化接口文件
 
 ---
 
@@ -22,43 +26,46 @@ M3节点和M4节点协同规范
 
 ## [包含平台](https://github.com/OS-Q/M2/wiki) 
 
-#### W5：[低成本平台](https://github.com/OS-Q/W5)
+#### W5：[比特输出](https://github.com/OS-Q/W5)
 
-基于低成本方案提供丰富的协同控制方案
+比特逻辑输出，包括开关状态控制
 
-#### W6：[性价比平台](https://github.com/OS-Q/W6)
+#### W6：[字节输出](https://github.com/OS-Q/W6)
 
-基于广泛应用的平台提供快速实现的方案
+连续量输出，对外设器件数字输出
 
-#### W7：[高性能平台](https://github.com/OS-Q/W7)
+#### W7：[显示输出](https://github.com/OS-Q/W7)
 
-基于各种高性能处理平台完成对应控制
+连接显示设备，驱动显示相关信息
 
-#### W8：[高密度平台](https://github.com/OS-Q/W8)
+#### W8：[文件输出](https://github.com/OS-Q/W8)
 
-更紧凑的设计和更小的器件实现高密度
+具有时间或条件控制的数据流输出
 
-#### W9：[专用化平台](https://github.com/OS-Q/W9)
+#### W9：[组合输出](https://github.com/OS-Q/W9)
 
-基于各种专用设备完成专用领域的控制
+具有多种输出方式，各种组合控制
 
 ## [同级节点](https://github.com/OS-Q/Q1/wiki)
 
-#### M1：[输入控制](https://github.com/OS-Q/M1)
+#### M1：[信号采集](https://github.com/OS-Q/M1)
 
 控制外接信号输入，完成数据采集过程
 
-#### -> M2：[输出控制](https://github.com/OS-Q/M2)
+#### -> M2：[数据输出](https://github.com/OS-Q/M2)
 
 控制对外信号输出，完成数据消费过程
 
-#### M3：[集成控制](https://github.com/OS-Q/M3)
+#### M3：[闭环控制](https://github.com/OS-Q/M3)
 
-集成相关资源，组合完成预定控制逻辑
+集成相关资源，组合完成预定闭环控制
+
 
 
 ---
 
-####  qitas@qitas.cn
-###  [Q redefined the scope of Operation System](http://www.OS-Q.com)
-####  2018-12-7
+####  © qitas@qitas.cn
+###  [OS-Q redefined Operation System](http://www.OS-Q.com)
+####  @ 2018-12-11
+
+---
