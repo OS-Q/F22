@@ -1,6 +1,6 @@
 {
-    "name":"AMetal",
-    "type":"Bare Metal",
+    "name":"MicroPython",
+    "type":"device",
     "url":"https://github.com/OS-Q/M02",
     "version":"1.0.0"
 }

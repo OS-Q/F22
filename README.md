@@ -1,17 +1,17 @@
-﻿# [AMetal](https://github.com/OS-Q/M02)
+﻿# [MicroPython](https://github.com/OS-Q/M02)
 
 [![sites](http://182.61.61.133/link/resources/OSQ.png)](http://www.OS-Q.com)
 
 ### [简介](https://github.com/OS-Q/M02/wiki)
 
-[AMetal](https://github.com/zlgopen/ametal) 是芯片级的裸机软件包，定义了跨平台的通用接口
+[MicroPython](http://www.micropython.org/) is a lean and efficient implementation of the Python 3 programming language that includes a small subset of the Python standard library and is optimised to run on microcontrollers and in constrained environments.
 
 #### [工程拓扑](https://github.com/OS-Q)
 
 * Q1：[device](https://github.com/OS-Q/Q1)
     * M01：[Arduino](https://github.com/OS-Q/M01)
-    * M02：[AMetal](https://github.com/OS-Q/M02)
-    * M03：[micropython](https://github.com/OS-Q/M03)
+    * M02：[MicroPython](https://github.com/OS-Q/M02)
+    * M03：[libopencm3](https://github.com/OS-Q/M03)
 * Q2：[client](https://github.com/OS-Q/Q2)
     * M04：[FreeRTOS](https://github.com/OS-Q/M04)
     * M05：[RT-Thread](https://github.com/OS-Q/M05)
@@ -25,4 +25,4 @@
     * M11：[HarmonyOS](https://github.com/OS-Q/M11)
     * M12：[Ubuntu](https://github.com/OS-Q/M12)
 
-### [OS-Q = [Open Source & Operating System]](http://www.OS-Q.com)
+### [Q = (OpenSource & OperatingSystem) ](http://www.OS-Q.com)
