@@ -9,7 +9,7 @@ on:
       - master
 
 env:
-  UPLOAD_BUILD: true
+  UPLOAD_BUILD: false
 
 jobs:
   # Check:
@@ -84,6 +84,7 @@ jobs:
         run: |
           qio run -d ${{ matrix.template }}
           cp -rf ${{ matrix.template }}/.pio/build/**/*.bin build
+          cp -rf ${{ matrix.template }}/.pio/build/**/*.hex build
 
       - name: output firmware
         if: env.UPLOAD_BUILD
@@ -104,4 +105,4 @@ jobs:
         if: success()
         run: |
           zip -r F22${{ matrix.template }}.zip build
-          ossutil cp F22${{ matrix.template }}.zip ${{ secrets.OSS_P_Q_BUCKET }} -f
+          ossutil cp F22${{ matrix.template }}.zip ${{ secrets.F_Q_T }} -f
