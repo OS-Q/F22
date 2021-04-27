@@ -69,14 +69,14 @@ jobs:
           pip install -U https://github.com/OS-Q/M03/releases/latest/download/qio.zip
           qio platform install https://github.com/OS-Q/P22/archive/master.zip
 
-      - name: Checkout templete
-        uses: actions/checkout@v2
-        with:
-          submodules: "recursive"
-          fetch-depth: 1
-          repository: OS-Q/F22${{ matrix.template }}
-          token: ${{ secrets.OSQ_REPO_TOKEN }}
-          path: ${{ matrix.template }}
+      # - name: Checkout templete
+      #   uses: actions/checkout@v2
+      #   with:
+      #     submodules: "recursive"
+      #     fetch-depth: 1
+      #     repository: OS-Q/F22${{ matrix.template }}
+      #     token: ${{ secrets.OSQ_REPO_TOKEN }}
+      #     path: ${{ matrix.template }}
 
       - name: Build templete
         if: success()
