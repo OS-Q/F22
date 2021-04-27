@@ -50,6 +50,7 @@ jobs:
   templete:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         template: ["A","B"]
 
@@ -80,19 +81,19 @@ jobs:
 
       - name: Build templete
         if: success()
-        working-directory: ${{ matrix.template }}
         run: |
-          qio run -d .
-          cp -rf ./.pio/build/**/*.bin  ../F22${{ matrix.template }}.bin
+          qio run -d ${{ matrix.template }}
+          cp -rf ${{ matrix.template }}/.pio/build/**/*.bin build
 
       - name: output firmware
         if: env.UPLOAD_BUILD
         uses: actions/upload-artifact@v2
         with:
           name: firmware_${{ matrix.template }}
-          path: ${{ matrix.template }}/.pio/build/
+          path: build
 
       - name: Setup Folder
+        if: success()
         uses: Qful/ossutil-action@master
         with:
           endpoint: ${{ secrets.OSS_ENDPOINT }}
@@ -102,4 +103,5 @@ jobs:
       - name: upload firmware
         if: success()
         run: |
-          ossutil cp F22${{ matrix.template }}.bin ${{ secrets.OSS_P_Q_BUCKET }} -f
+          zip -r F22${{ matrix.template }}.zip build
+          ossutil cp F22${{ matrix.template }}.zip ${{ secrets.OSS_P_Q_BUCKET }} -f
