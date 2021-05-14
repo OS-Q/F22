@@ -1,4 +1,19 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*__pyc*/
 *.pio/
 *.vscode/
-*.map
-*.DS_Store
+*.rst
+**/CONTR*
+**/CHANGE*
+.gitmodules
+**/*/README*
+LICENSE*
+*.png
+*.jpg
+*.rst
+*.md
+**/README*
+# **/*git*
+# .travis.yml
