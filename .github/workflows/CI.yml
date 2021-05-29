@@ -49,7 +49,7 @@ jobs:
           - "eval-blink"
           - "nano-blink"
           - "arduino-blink"
-        package: ["pio","qio","all"]
+        package: ["pio","qio"]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -66,19 +66,12 @@ jobs:
         if: matrix.package == 'qio'
         run: |
           pip install -U https://github.com/OS-Q/M03/releases/latest/download/qio.zip
-          pio platform install https://github.com/OS-Q/P212/archive/qio.zip
-
+          qio platform install https://github.com/OS-Q/P221/archive/master.zip
       - name: Install pio
         if: matrix.package == 'pio'
         run: |
           pip install -U https://github.com/platformio/platformio/archive/develop.zip
-          pio platform install https://github.com/OS-Q/P212/archive/pio.zip
-
-      - name: Install all
-        if: matrix.package == 'all'
-        run: |
-          pip install -U https://github.com/OS-Q/M03/releases/latest/download/qio.zip
-          pio platform install https://github.com/OS-Q/P212/archive/master.zip
+          pio platform install https://github.com/OS-Q/P221/archive/master.zip
 
       - name: Build examples
         run: |
